@@ -40,10 +40,6 @@ docker-compose up -d
 
 After running these commands, you should be able to access RStudio through your browser at `http://localhost:8787`.
 
-### Contributing
-
-If you want to contribute to this project, please fork the repository and create a pull request. Any contributions you make are greatly appreciated.
-
 ### License
 
 This project uses the following license: [Unlicense](LICENSE).
