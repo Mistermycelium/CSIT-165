@@ -23,13 +23,13 @@ After installing Docker Desktop and WSL, you can use this repository by running 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/Mistermycelium/CSIT-165.git
 ```
 
 2. Navigate to the cloned repository:
 
 ```bash
-cd yourrepository
+cd CSIT-165
 ```
 
 3. Run Docker Compose:
