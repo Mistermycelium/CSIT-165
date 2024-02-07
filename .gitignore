@@ -50,3 +50,5 @@ rsconnect/
 
 # Student files
 workingdir/
+data/
+.rstudio_config/
