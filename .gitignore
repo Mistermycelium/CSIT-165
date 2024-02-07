@@ -48,6 +48,9 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+# RStudio Site Library folder
+site-library/
+
 # Student files
 workingdir/
 data/
