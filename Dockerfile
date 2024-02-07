@@ -4,7 +4,7 @@ FROM rocker/rstudio
 WORKDIR /home/rstudio/workingdir
 
 # Change ownership of the working directory to the rstudio user
-RUN chown -R rstudio:rstudio /home/rstudio/workingdir
+RUN chown -R root:root /home/rstudio/workingdir
 
 # Set permissions for the working directory
-RUN chmod -R  755 /home/rstudio/workingdir
+RUN chmod -R  777 /home/rstudio/workingdir
