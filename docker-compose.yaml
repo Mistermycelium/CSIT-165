@@ -13,4 +13,4 @@ services:
       - USERID=1000
       - GROUPID=1000
       - PASSWORD=r
-    restart: unless-stopped
+    # restart: unless-stopped
