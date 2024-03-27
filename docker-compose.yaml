@@ -9,6 +9,7 @@ services:
       - ./.rstudio_config:/home/rstudio/.config/rstudio
       - ./workingdir:/home/rstudio/workingdir
       - ./data:/home/rstudio/workingdir/data
+      - ./scripts:/home/rstudio/workingdir/scripts
       - ./site-library:/usr/local/lib/R/site-library
     environment:
       - USERID=1000
