@@ -1,0 +1,6 @@
+{
+  "name": "Rstudio devcontainer",
+  "dockerComposeFile": "../docker-compose.yaml",
+  "service": "rstudio",
+  "forwardPorts": [8787]
+}

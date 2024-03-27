@@ -1,4 +1,4 @@
-FROM rocker/rstudio
+FROM rocker/rstudio:4
 
 # Set working directory
 WORKDIR /home/rstudio/workingdir
