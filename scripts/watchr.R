@@ -21,11 +21,8 @@ watch_file <- function(file_name, interval) {
 
       if (!is.null(file)) {
         file_path <- file$file_path
-        print(paste("Checking ", file_path, " for changes"))
         last_modified_time <- file$modification_time
-        print(paste("Last modified time: ", last_modified_time))
         current_modified_time <- file_info(file_path)$modification_time
-        print(paste("Current modified time: ", current_modified_time))
         if (current_modified_time > last_modified_time) {
           rmarkdown::render(file_path)
           file_mod_times_list[[i]]$modification_time <<- current_modified_time # nolint: line_length_linter.
@@ -56,7 +53,9 @@ main <- function(dir_path) {
     list(modification_time = info$modification_time, file_path = file)
   })
 
-
+  for (i in seq_along(files)) {
+    print(paste("Watching", files[i], "for changes"))
+  }
   # Loop until all tasks are executed
   while (TRUE) {
     tasks <- lapply(files, watch_file, interval = 1)
