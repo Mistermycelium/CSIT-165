@@ -1,0 +1,39 @@
+[1] "Watching /home/rstudio/workingdir/data/CSIT-165/Project-1/template.Rmd for changes"
+[1] "Watching /home/rstudio/workingdir/data/CSIT-165/Vignettes/midterm_vignette.Rmd for changes"
+[1] "Watching /home/rstudio/workingdir/group-project-1/template1.Rmd for changes"
+[1] "Watching /home/rstudio/workingdir/group-project-1/Test.Rmd for changes"
+[1] "Watching /home/rstudio/workingdir/Lab1/Lab1.Rmd for changes"
+[1] "Watching /home/rstudio/workingdir/Lab2/Lab2.Rmd for changes"
+[1] "Watching /home/rstudio/workingdir/Lab3/Lab3.Rmd for changes"
+
+
+processing file: Test.Rmd
+1/17                  
+2/17 [setup]          
+3/17                  
+4/17 [unnamed-chunk-1]
+5/17                  
+6/17 [ob1]            
+7/17                  
+8/17 [ob2]            
+9/17                  
+10/17 [ob3]            
+11/17                  
+12/17 [ob4.1]          
+13/17                  
+14/17 [ob4.2]          
+15/17                  
+16/17 [gitlog]         
+running: bash  -c 'git log --pretty=format:"%nSubject: %s%nAuthor: %aN%nDate: %aD%nBody: %b"'
+17/17                  
+output file: Test.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS Test.knit.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output Test.tex --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /usr/local/lib/R/site-library/rmarkdown/rmarkdown/lua/latex-div.lua --embed-resources --standalone --table-of-contents --toc-depth 3 --highlight-style tango --pdf-engine pdflatex --variable graphics --include-in-header /tmp/RtmpPglkis/rmarkdown-str149e25a0de504.html --variable 'geometry:margin=1in' --include-in-header /tmp/RtmpPglkis/rmarkdown-str149e2529ac8b8.html 
+! sh: 1: pdflatex: not found
+
+Error: LaTeX failed to compile Test.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Test.log for more info.
+In addition: Warning message:
+In system2(..., stdout = if (use_file_stdout()) f1 else FALSE, stderr = f2) :
+  error in running command
+Error: invoke_wrapped: throwing std::runtime_error
+Execution halted

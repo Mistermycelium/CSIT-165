@@ -16,3 +16,4 @@ services:
       - GROUPID=1000
       - PASSWORD=r
     # restart: unless-stopped
+    # command: sh -c "nohup Rscript /home/rstudio/workingdir/scripts/watchr.R > /home/rstudio/workingdir/scripts/watchr.log 0>&1 &"
